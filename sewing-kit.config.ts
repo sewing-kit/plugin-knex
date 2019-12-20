@@ -1,6 +1,5 @@
 import {createPackage, Runtime} from '@sewing-kit/config';
-import {packageCreateCommonJsOutputPlugin} from '@sewing-kit/plugin-package-commonjs';
-import {buildPackageTsDefinitionsPlugin} from '@sewing-kit/plugin-package-typescript';
+import {createPackageFlexibleOutputsPlugin} from '@sewing-kit/plugin-package-flexible-outputs';
 import {
   quiltWorkspacePlugin,
   quiltPackagePlugin,
@@ -12,7 +11,13 @@ export default createPackage((pkg) => {
   pkg.plugins(
     quiltWorkspacePlugin,
     quiltPackagePlugin,
-    buildPackageTsDefinitionsPlugin,
-    packageCreateCommonJsOutputPlugin,
+    createPackageFlexibleOutputsPlugin({
+      binaries: false,
+      commonjs: true,
+      esmodules: false,
+      esnext: false,
+      node: false,
+      typescript: true,
+    }),
   );
 });
