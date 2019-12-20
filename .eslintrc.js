@@ -5,8 +5,11 @@ module.exports = {
     'plugin:@sewing-kit/prettier',
   ],
   ignorePatterns: [
-    'node_modules/',
-    'build/',
+    '/build/',
+    '/node_modules/',
+    '/*.js',
+    '/*.d.ts',
+    '!.eslintrc.js',
   ],
   overrides: [
     {
