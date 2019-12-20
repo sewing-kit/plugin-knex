@@ -22,5 +22,11 @@
     "@sewing-kit/plugin-package-flexible-outputs": "^0.0.17",
     "@sewing-kit/plugin-webpack": "^0.0.23",
     "@sewing-kit/plugins": "^0.0.10"
-  }
+  },
+  "files": [
+    "src",
+    "build",
+    "index.js",
+    "index.d.ts"
+  ]
 }
