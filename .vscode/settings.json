@@ -1,0 +1,14 @@
+{
+  // Formatting
+  "eslint.format.enable": true,
+  "prettier.packageManager": "yarn",
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "cSpell.words": [
+    "postgres"
+  ]
+}
