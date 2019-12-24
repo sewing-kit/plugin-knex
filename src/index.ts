@@ -1,6 +1,6 @@
 import {createComposedProjectPlugin} from '@sewing-kit/plugins';
 import {
-  addWebpackPlugin,
+  addWebpackPlugins,
   noopModuleWithWebpack,
 } from '@sewing-kit/plugin-webpack';
 
@@ -12,14 +12,14 @@ export interface Options {
   dialect: Dialect;
 }
 
-export function createKnexPlugin({dialect}: Options) {
+export function knex({dialect}: Options) {
   if (dialect !== Dialect.Postgres) {
     throw new Error('Only postgres is currently supported.');
   }
 
   return createComposedProjectPlugin('Knex', [
     noopModuleWithWebpack(/\.\.\/(migrate|seed)/),
-    addWebpackPlugin(async () => {
+    addWebpackPlugins(async () => {
       const {IgnorePlugin} = await import('webpack');
 
       return [
