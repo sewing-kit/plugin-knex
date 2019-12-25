@@ -1,6 +1,6 @@
 import {createComposedProjectPlugin} from '@sewing-kit/plugins';
 import {
-  addWebpackPlugins,
+  webpackPlugins,
   noopModuleWithWebpack,
 } from '@sewing-kit/plugin-webpack';
 
@@ -19,7 +19,7 @@ export function knex({dialect}: Options) {
 
   return createComposedProjectPlugin('Knex', [
     noopModuleWithWebpack(/\.\.\/(migrate|seed)/),
-    addWebpackPlugins(async () => {
+    webpackPlugins(async () => {
       const {IgnorePlugin} = await import('webpack');
 
       return [
