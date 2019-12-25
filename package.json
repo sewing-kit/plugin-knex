@@ -1,6 +1,6 @@
 {
   "name": "sewing-kit-plugin-knex",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A plugin for sewing-kit that configures builds for knex.",
   "main": "index.js",
   "repository": "https://github.com/sewing-kit/plugin-knex.git",
