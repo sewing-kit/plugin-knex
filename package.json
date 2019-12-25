@@ -1,6 +1,6 @@
 {
   "name": "sewing-kit-plugin-knex",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A plugin for sewing-kit that configures builds for knex.",
   "main": "index.js",
   "repository": "https://github.com/sewing-kit/plugin-knex.git",
@@ -14,12 +14,12 @@
     "prepublish": "sk build"
   },
   "devDependencies": {
-    "@quilted/sewing-kit-plugins": "^0.0.21",
+    "@quilted/sewing-kit-plugins": "^0.0.22",
     "@sewing-kit/cli": "^0.0.33",
     "@sewing-kit/eslint-plugin": "^0.0.8"
   },
   "dependencies": {
-    "@sewing-kit/plugin-package-flexible-outputs": "^0.0.24",
+    "@sewing-kit/plugin-package-flexible-outputs": "^0.0.25",
     "@sewing-kit/plugin-webpack": "^0.0.27",
     "@sewing-kit/plugins": "^0.0.12"
   },
