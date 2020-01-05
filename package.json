@@ -15,13 +15,13 @@
   },
   "devDependencies": {
     "@quilted/sewing-kit-plugins": "^0.0.24",
-    "@sewing-kit/cli": "^0.0.36",
-    "@sewing-kit/eslint-plugin": "^0.0.8"
+    "@sewing-kit/cli": "^0.0.40",
+    "@sewing-kit/eslint-plugin": "^0.0.9"
   },
   "dependencies": {
-    "@sewing-kit/plugin-package-flexible-outputs": "^0.0.27",
-    "@sewing-kit/plugin-webpack": "^0.0.29",
-    "@sewing-kit/plugins": "^0.0.14"
+    "@sewing-kit/plugin-package-flexible-outputs": "^0.0.31",
+    "@sewing-kit/plugin-webpack": "^0.0.33",
+    "@sewing-kit/plugins": "^0.0.18"
   },
   "files": [
     "src",
